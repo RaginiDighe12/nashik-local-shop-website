@@ -10,9 +10,9 @@ body {
   background: #f9fafb;
 }
 
-/* ========================= */
+
 /* Navbar */
-/* ========================= */
+
 .navbar-custom {
   display: flex;
   justify-content: space-between;
@@ -92,9 +92,8 @@ body {
   box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
 }
 
-/* ========================= */
+
 /* Hero Slider */
-/* ========================= */
 .hero-slider {
   width: 100%;
   height: 85vh;
