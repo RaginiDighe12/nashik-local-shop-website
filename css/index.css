@@ -6,8 +6,8 @@
   font-family: "Segoe UI", sans-serif;
 }
 
-body {
-  background: #f9fafb;
+body{
+  background-color: #f9f9f6;
 }
 
 /* Navbar */
@@ -242,6 +242,79 @@ body {
 .hero-slide:nth-child(4) {
   animation-delay: 12s;
 }
+
+/* WELCOME SECTION */
+.welcome-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1d3557;
+}
+
+.welcome-section p {
+  color: #6c757d;
+  line-height: 1.7;
+}
+
+.welcome-img {
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* CATEGORY SECTION */
+.category-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #3b3b98;
+}
+
+.view-all {
+  text-decoration: none;
+  font-weight: 600;
+  color: #5f6caf;
+}
+
+.category-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+}
+
+.cat-icon {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  border-radius: 15px;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.electronics { background: #cb77ec; }
+.fashion { background: #00b4d8; }
+.home { background: #ffbe0b; }
+.gift { background: #62c7e0; }
+
+.shop-count {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 14px;
+  font-size: 12px;
+  border-radius: 20px;
+  background: #eef2ff;
+  color: #3b3b98;
+  font-weight: 600;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
