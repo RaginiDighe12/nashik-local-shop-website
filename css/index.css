@@ -8,9 +8,10 @@
 
 body{
   background-color: #f9f9f6;
+  overflow-x: hidden;
 }
 
-/* Navbar */
+/* ================= NAVBAR ================= */
 
 .navbar-custom {
   display: flex;
@@ -25,15 +26,34 @@ body{
   z-index: 1000;
 }
 
+/* LOGO container */
 .logo {
-  font-size: 26px;
+  display: flex;          /* horizontal layout */
+  align-items: center;    /* vertically center all items */
+  gap: 8px;               /* space between icon, image, text */
+  font-size: 26px;        /* text size */
   font-weight: 900;
   color: #4f46e5;
 }
 
+/* span color */
 .logo span {
   color: #22c55e;
 }
+
+/* Font Awesome icon */
+.logo i {
+  font-size: 28px;
+  color: #4f46e5;
+}
+
+/* Logo image */
+.logo img {
+  height: 35px;   /* adjust size as needed */
+  width: auto;
+  display: block;
+}
+
 
 .nav-links {
   display: flex;
@@ -48,7 +68,12 @@ body{
   color: #111827;
   position: relative;
   padding: 6px 4px;
-  transition: 0.3s;
+}
+
+.nav-links a i {
+  margin-right: 6px;
+  font-size: 15px;
+  color: inherit;
 }
 
 .nav-links a::after {
@@ -75,23 +100,6 @@ body{
 .nav-links a.active {
   color: #22c55e;
 }
-
-.btn-business {
-  padding: 10px 20px;
-  background: linear-gradient(135deg, #4f46e5, #22c55e);
-  color: #fff !important;
-  border-radius: 30px;
-  font-weight: bold;
-  box-shadow: 0 5px 15px rgba(79, 70, 229, 0.25);
-  transition: 0.3s;
-}
-
-.btn-business:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
-}
-
-
 /* Hero Slider */
 
 .hero-slider {
@@ -255,9 +263,19 @@ body{
   line-height: 1.7;
 }
 
-.welcome-img {
+.welcome-img-box {
+  border-radius: 20px;
+  height: 220%;
+  width: 600px;
+  overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.welcome-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* CATEGORY SECTION */
@@ -299,7 +317,7 @@ body{
   margin-bottom: 20px;
 }
 
-.electronics { background: #cb77ec; }
+.electronics { background: #f4d386; }
 .fashion { background: #00b4d8; }
 .home { background: #ffbe0b; }
 .gift { background: #62c7e0; }
